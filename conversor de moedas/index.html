@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor de moedas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .dolar {
+            color: white;
+            text-align: center;
+            margin-top: 15%;
+        }
+
+        .euro {
+            color: white;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        .peso {
+            color: white;
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        h3 {
+            font-size: 25px;
+            color: red;
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            margin-left: 40%;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        span {
+            color: red;
+        }
+        h5{
+            color: red;
+        }
+        h4{
+            color:red;
+        }
+
+        .dolar input[type=number] {
+            margin-top: 15px;
+            width: 18%;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        .euro input[type=number] {
+            margin-top: 15px;
+            width: 18%;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        .peso input[type=number] {
+            margin-top: 15px;
+            width: 18%;
+            height: 30px;
+            padding-left: 10px;
+        }
+
+        .butao {
+            width: 15%;
+            height: 28px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3> Conversor De Moedas</h3>
+    <div class="dolar">
+        <p>Converter valor de Dolar para real</p>
+        <input type="number" id="dolar" placeholder="coloque o valor aqui">
+        <br>
+        <br>
+        <button type="submit" onclick="converter()" class="butao">Converter</button>
+        <br>
+        <br>
+        o resultado e:<span></span>
+    </div>
+
+    <div class="euro">
+        <p>Converter valor de Euro para real</p>
+        <input type="number" id="euro" placeholder="coloque o valor aqui">
+        <br>
+        <br>
+        <button type="submit" onclick="converter1()" class="butao">Converter</button>
+        <br>
+        <br>
+        o resultado e:<h5></h5>
+    </div>
+
+
+    <div class="peso">
+        <p>Converter valor de Peso para real</p>
+        <input type="number" id="peso" placeholder="coloque o valor aqui">
+        <br>
+        <br>
+        <button type="submit" onclick="converter2()" class="butao">Converter</button>
+        <br>
+        <br>
+        o resultado e:<h4></h4>
+    </div>
+
+    <script src="scipt.js"></script>
+
+</body>
+
+</html>
